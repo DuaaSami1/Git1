@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+  <style type="text/css">
+    legend{
+      background-color: white;
+      font-family: arial;
+    }
+    fieldset{
+      background-color: lightgray ;
+    }
+  </style>
+</head>
+<body>
+<a style="text-decoration:none" href="home.html">Home</a>
+<a style="text-decoration:none" href="register.html">Register</a>
+<a style="text-decoration:none" href="about.html">About</a>
+<a  style="text-decoration:none" href="images.html">Contact</a>
+<h1>Student Registeration Form</h1>
+<form  method="post" action="apply-now.php">
+	<fieldset><legend>Personal Details</legend>
+    <label for="fname">First Name</label>
+    <input type="text" name="fname" id="fname" />
+    <br />
+    <label for="lname">Last Name</label>
+    <input type="text" name="lname" id="lname" />
+   <br />
+     Gender: 
+     <input name="gender" type="radio" id="gm" value="m" />
+     <label for="gm">Male</label>
+     <input name="gender" type="radio" id="gf" value="f" />
+     <label for="gf">Female</label>
+   <br />
+    <label for="email">Email</label>
+    <input type="text" name="email" id="email" />
+ </fieldset>
+ <fieldset>
+ 	<legend>Academic Details</legend>
+<label for="degree">Department</label>
+    <select name="department" id="department">
+      <option value="IT">Information Technology</option>
+      <option value="CS">Computer Science</option>
+       <option value="Stat">Statistics</option>
+      <option value="Math" selected="selected">Mathemetics</option>
+    </select>
+ </fieldset>
+  <fieldset>
+ 	<legend>Courses</legend>
+ 	<input type="checkbox" name="Web Design" value="web design" >Web Design</input><br>
+    	<input type="checkbox" name="DS" value="DS" >Data Structure</input><br>
+    		<input type="checkbox" name="Alg" value="Alg" >Algorithms</input><br>
+    		<input type="checkbox" name="AI" value="AI" >Artificial intelligence</input><br>
+    	
+
+ </fieldset>
+<br>
+ <input type="submit" name="submit" value="Register" />
+    <input type="reset" value="Clear Form" />
+</form>
+
+</body>
+</html>
